@@ -1,4 +1,4 @@
-package cn.anger.functional;
+package cn.anger.functional.collections;
 
 import java.math.BigDecimal;
 import java.util.List;
