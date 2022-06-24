@@ -15,3 +15,11 @@ s
 Csrc/main/java/cn/anger/functional/collections/PickingAnElement.java,1/3/13834f36923ef78d1e819c06e562fbe28f237ffe
 r
 Bsrc/main/java/cn/anger/functional/collections/JoiningElements.java,8/1/81fc6b41743c1d02fd0e88eeedecf9f5c74371dd
+l
+<src/main/java/cn/anger/functional/strings/IterateString.java,f/9/f904607174511b4ecb46ebe9f8ab560dad223d90
+p
+@src/main/java/cn/anger/functional/collections/PickAnLongest.java,f/0/f02895e0b49ceed314b574f4a508736f273fde93
+z
+Jsrc/main/java/cn/anger/functional/comparator/MultiAndFluentComparison.java,d/6/d627d128afb64bd6cd241cbc8e669703faca1a17
+x
+Hsrc/main/java/cn/anger/functional/comparator/ImplementingComparator.java,a/a/aaf95a79ace4446ad15ee1133e463980973f0f55

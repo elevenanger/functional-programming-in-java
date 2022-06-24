@@ -11,11 +11,38 @@ import java.util.stream.Collectors;
  * description : 实现比较器接口
  */
 public class ImplementingComparator {
+
+    public static class Person {
+        private final String name;
+        private final int age;
+
+        public Person(String name, int age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getAge() {
+            return age;
+        }
+
+        public int ageDifference(final Person other) {
+            return age - other.getAge();
+        }
+
+        @Override
+        public String toString() {
+            return String.format("%s-%d", name, age);
+        }
+    }
     public static void main(String[] args) {
         final List<Person> persons = Arrays.asList(
-            new Person("Wong",5),
-            new Person("Zhang",3),
-            new Person("Li",4)
+            new Person("Wong", 5),
+            new Person("Zhang", 3),
+            new Person("Li", 4)
         );
 
         Comparator<Person> ascendComparator = Person::ageDifference;
@@ -73,35 +100,5 @@ public class ImplementingComparator {
         persons.stream()
             .max(ascendComparator)
             .ifPresent(p -> System.out.println("年龄最大：" + p));
-    }
-}
-
-class Person {
-    private final String name;
-    private final int age;
-
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public int ageDifference(final Person other) {
-        return age - other.getAge();
-    }
-
-    @Override
-    public String toString() {
-        return "Person{" +
-            "name='" + name + '\'' +
-            ", age=" + age +
-            '}';
     }
 }
