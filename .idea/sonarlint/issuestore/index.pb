@@ -47,3 +47,7 @@ n
 >src/test/java/cn/anger/functional/design/AngerFinanceTest.java,1/0/102c1012b732820e64d4b6c5a397528655a47e2c
 j
 :src/main/java/cn/anger/functional/design/AngerFinance.java,7/8/78851fb5efaabd7abfb2dae9409c5b3e2d3104ea
+n
+>src/test/java/cn/anger/functional/design/CalculateNAVTest.java,7/1/71f74007347f5b0baaec98a8cdec1a99a7a8fe1a
+j
+:src/main/java/cn/anger/functional/design/CalculateNAV.java,a/9/a9f5d2d1f855e04eee37f9ffead6bea2c5ef5357
