@@ -28,9 +28,11 @@ public class AngerFinance {
      */
     public static BigDecimal getPrice(final String ticker) {
         try (Stream<String> sharesStream =
-            Files.lines(Paths.get(financeInfoPath,ticker + ".dat"))){
+            Files.lines(Paths.get(financeInfoPath,ticker))){
             return
-                sharesStream.map(BigDecimal::new)
+                sharesStream
+                    .skip(1)
+                    .map(BigDecimal::new)
                     .findFirst()
                     .orElseThrow(RuntimeException::new);
         } catch (IOException e) {
